@@ -5,6 +5,8 @@ export PATH=/usr/local/bin:$PATH
 
 export EDITOR=vi
 
+source ~/django_bash_completion
+
 # Functions
 # Opens a new tab in the current Terminal window and optionally executes a command.
 # When invoked via a function named 'newwin', opens a new Terminal *window* instead.
