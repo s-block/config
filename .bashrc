@@ -5,8 +5,8 @@ export PATH=/usr/local/bin:$PATH
 
 export EDITOR=vi
 
-if [ -f ~/bash_completion ]; then
-    . ~/bash_completion
+if [ -f ~/.bash_completion ]; then
+    . ~/.bash_completion
 fi
 
 # Functions
