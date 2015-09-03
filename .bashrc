@@ -243,6 +243,9 @@ newwin() {
 #   -----------------------------
 #   2.  MAKE TERMINAL BETTER
 #   -----------------------------
+
+alias gi=git
+alias gti=git
  
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
