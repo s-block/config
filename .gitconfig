@@ -1,2 +1,40 @@
 [alias]
-gui = !sh -c '/usr/local/git/libexec/git-core/git-gui'
+  gui = !sh -c '/usr/local/git/libexec/git-core/git-gui'
+	br = branch
+	ci = commit
+	co = checkout
+	d  = diff
+	wdiff = diff --color-words
+	st = status -sb
+	amend = commit --amend
+	pr = pull --rebase
+	fu = checkout -f
+	hist = log --all --graph --pretty='[%C(cyan)%h%Creset]%C(bold cyan)%d%Creset %s'
+	lp = log -p
+  tst = st
+[core]
+	excludesfile = ~/etc/git/ignore
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
+[color]
+	ui = true
+[help]
+	autocorrect = 20
+[diff]
+	renames = true
+[rebase]
+  autosquash = true
+[url "git@github.com:"]
+  insteadOf = "gh:"
+  pushInsteadOf = "github:"
+  pushInsteadOf = "git://github.com/"
+[url "git://github.com/"]
+  insteadOf = "github:"
+[url "git@gist.github.com:"]
+  insteadOf = "gst:"
+  pushInsteadOf = "gist:"
+  pushInsteadOf = "git://gist.github.com/"
+[url "git://gist.github.com/"]
+  insteadOf = "gist:"
